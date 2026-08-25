@@ -54,13 +54,13 @@ export default function App() {
 
   // Ambient sound levels
   const [ambientSettings, setAmbientSettings] = useState<AmbientSettings>({
-    masterVolume: 0.85,
-    trainRhythm: 0.65,
+    masterVolume: 1.0,
+    trainRhythm: 0.10,
     trainSpeed: 'medium',
-    fanHum: 0.4,
+    fanHum: 0.10,
     fanSpeed: 'medium',
-    windBreeze: 0.35,
-    chaiVendor: 0.5,
+    windBreeze: 0.10,
+    chaiVendor: 0.20,
     rainIntensity: 0.0,
     locoHornEnabled: true
   });
@@ -270,6 +270,7 @@ export default function App() {
 
   const onPlayerReady = (event: YouTubeEvent) => {
     setYtPlayer(event.target);
+    event.target.setVolume(100);
     // Explicitly cue the playlist to ensure it loads
     event.target.cuePlaylist({ list: 'PLluqBUTOXDHUjNguM2wgfaVJhC0OHTTqB' });
     const data = event.target.getVideoData();
