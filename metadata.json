@@ -1,0 +1,8 @@
+{
+  "name": "Train Wala - Indian Railway Nostalgia",
+  "description": "An immersive cinematic Indian railway sleeper-class music journey with ambient sounds, nostalgic tracks, moving countryside parallax, and golden hour aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
